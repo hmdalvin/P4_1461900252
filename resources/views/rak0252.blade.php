@@ -34,16 +34,13 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/')}}">
                 <div class="sidebar-brand-text mx-3">Perpus DASKOM</div>
             </a>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="{{url('rak0252')}}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tabel Rak Buku</span></a>
             </li>
@@ -124,7 +121,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Data Tabel</h6>
-                            <a href="{{url('rak/export/')}}" class="btn btn-success btn-icon-split">
+                            <a href="{{url('rak/export/')}}" class="btn btn-success btn-icon-split mt-2">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-flag"></i>
                                 </span>
@@ -191,7 +188,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021 - BY Ahmad Alfianto</span>
+                        <span>Copyright &copy; Your Website 2021 - By Ahmad Alfianto</span>
                     </div>
                 </div>
             </footer>
@@ -229,21 +226,21 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{URL::asset('assets/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{URL::asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{URL::asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="{{URL::asset('assets/js/sb-admin-2.min.js')}}"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="{{URL::asset('assets/vendor/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{URL::asset('assets/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+    <script src="{{URL::asset('assets/js/demo/datatables-demo.js')}}"></script>
 
 </body>
 
